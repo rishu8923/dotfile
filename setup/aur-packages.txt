@@ -1,0 +1,17 @@
+hellwal
+superproductivity-bin
+ente-auth-bin
+tutanota-desktop-bin
+hayase-desktop-bin 
+librewolf-bin
+swaylock-effects-git 
+joplin
+betterbird-bin 
+exercism-bin 
+ente-desktop-bin 
+notesnook-bin 
+tmuxinator
+bridge-utils
+libvirt-git
+session-desktop-bin 
+vesktop-bin 

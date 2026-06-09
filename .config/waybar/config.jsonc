@@ -1,0 +1,121 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 26,
+  "spacing": 0,
+  "reload_style_on_change": true,
+
+  "modules-left": [
+    "custom/arch",
+    "sway/workspaces"
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "network#traffic",
+    "memory",
+    "cpu",
+    "temperature",
+    "custom/wifi",
+    "custom/bluetooth",
+    "pulseaudio",
+    "backlight",
+    "custom/clipboard",
+    "battery",
+    "tray"
+  ],
+
+  "custom/arch": {
+    "format": "󰣇",
+    "tooltip": false
+  },
+
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{name}"
+  },
+
+  "clock": {
+    "format": "{:%a %H:%M}",
+    "format-alt": "{:%d %b %Y}",
+    "tooltip": false
+  },
+
+  "memory": {
+    "interval": 5,
+    "format": "󰘚 {percentage}%"
+  },
+
+  "cpu": {
+    "interval": 2,
+    "format": "󰍛 {usage}%"
+  },
+
+  "temperature": {
+    "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
+    "critical-threshold": 80000,
+    "interval": 2,
+    "format": " {temperatureC}°C"
+  },
+
+  "network#traffic": {
+    "interface": "wlan0",
+    "interval": 1,
+    "format": " {bandwidthDownBits}  {bandwidthUpBits}"
+  },
+
+  "custom/wifi": {
+    "format": "󰤨",
+    "tooltip": "WiFi Manager",
+    "on-click": "alacritty -t wifi-manager -e impala"
+  },
+
+  "custom/bluetooth": {
+    "format": "󰂯",
+    "tooltip": "Bluetooth Manager",
+    "on-click": "alacritty -t bluetooth-manager -e bluetui"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰖁",
+    "format-icons": {
+      "default": ["", "", ""]
+    },
+    "scroll-step": 5,
+    "on-click": "pavucontrol"
+  },
+
+  "backlight": {
+    "format": "󰃠 {percent}%",
+    "hwmon-path": "/sys/class/backlight/intel_backlight/brightness"
+  },
+
+  "battery": {
+    "interval": 5,
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "",
+    "format-icons": {
+      "default": [
+        "󰁺","󰁻","󰁼","󰁽","󰁾",
+        "󰁿","󰂀","󰂁","󰂂","󰁹"
+      ]
+    }
+  },
+
+  "custom/clipboard": {
+    "format": "󰅍",
+    "tooltip": true,
+    "on-click": "cliphist list | wofi --dmenu --prompt Clipboard | cliphist decode | wl-copy"
+  },
+
+  "tray": {
+    "icon-size": 12,
+    "spacing": 8
+  }
+}

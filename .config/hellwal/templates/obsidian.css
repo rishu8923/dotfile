@@ -1,0 +1,22 @@
+:root {
+    --hellwal-bg: #%% background.hex %%;
+    --hellwal-fg: #%% foreground.hex %%;
+    --hellwal-border: #%% border.hex %%;
+
+    --hellwal-0: #%% color0.hex %%;
+    --hellwal-1: #%% color1.hex %%;
+    --hellwal-2: #%% color2.hex %%;
+    --hellwal-3: #%% color3.hex %%;
+    --hellwal-4: #%% color4.hex %%;
+    --hellwal-5: #%% color5.hex %%;
+    --hellwal-6: #%% color6.hex %%;
+    --hellwal-7: #%% color7.hex %%;
+    --hellwal-8: #%% color8.hex %%;
+    --hellwal-9: #%% color9.hex %%;
+    --hellwal-10: #%% color10.hex %%;
+    --hellwal-11: #%% color11.hex %%;
+    --hellwal-12: #%% color12.hex %%;
+    --hellwal-13: #%% color13.hex %%;
+    --hellwal-14: #%% color14.hex %%;
+    --hellwal-15: #%% color15.hex %%;
+}

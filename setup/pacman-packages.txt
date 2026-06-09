@@ -1,0 +1,175 @@
+# Base / Build
+git
+base-devel
+libcamera
+
+# Virtualization (QEMU + KVM + SPICE + TPM)
+qemu-desktop
+qemu-img
+dnsmasq
+vde2
+openbsd-netcat
+edk2-ovmf
+swtpm
+virtiofsd
+spice
+spice-gtk
+spice-vdagent
+dmidecode
+
+# Containers
+docker
+
+# CLI Utilities
+tree
+curl
+wget
+unzip
+zip
+rsync
+
+# CLI Tools
+fzf
+bat
+
+# System Monitoring
+htop
+btop
+fastfetch
+
+# Editor / Terminal
+neovim
+tmux
+alacritty
+kitty
+starship
+
+# Productivity / Notes
+anki
+obsidian
+yazi
+impala
+bitwarden
+rclone
+
+# Privacy / Communication
+torbrowser-launcher
+signal-desktop
+telegram-desktop
+
+# Media
+mpv
+imv
+ffmpeg
+ffmpegthumbnailer
+libvips
+
+# Documents (Zathura)
+zathura
+zathura-pdf-poppler
+zathura-djvu
+zathura-ps
+
+# Wayland (Sway UI)
+waybar
+wofi
+mako
+swaybg
+swayidle
+
+# Hardware Control
+pamixer
+brightnessctl
+playerctl
+
+# Clipboard
+cliphist
+
+# XDG / Portals
+xdg-user-dirs
+xdg-utils
+xdg-desktop-portal
+xdg-desktop-portal-wlr
+xdg-desktop-portal-gtk
+
+# Policy / Settings
+polkit-gnome
+dconf
+
+# Security
+firejail
+ufw
+apparmor
+xdg-dbus-proxy
+
+# File Management
+nautilus
+gvfs
+gvfs-smb
+gvfs-mtp
+udiskie
+
+# Thumbnails / Preview
+tumbler
+poppler-glib
+libgsf
+webp-pixbuf-loader
+gst-libav
+
+# Connectivity
+bluez
+bluez-utils
+bluetui
+android-tools
+
+# Theming / UI
+papirus-icon-theme
+adwaita-icon-theme
+qt5ct
+qt6ct
+kvantum
+kvantum-qt5
+nwg-look
+adw-gtk-theme
+
+# Fonts
+fontconfig
+freetype2
+noto-fonts
+noto-fonts-extra
+noto-fonts-emoji
+noto-fonts-cjk
+ttf-dejavu
+ttf-liberation
+ttf-roboto
+cantarell-fonts
+ttf-fira-code
+ttf-jetbrains-mono-nerd
+ttf-nerd-fonts-symbols
+noto-fonts-extra
+
+# Disk / Filesystems
+gparted
+dosfstools
+ntfs-3g
+exfatprogs
+
+# Graphics / Video Acceleration
+mesa
+vulkan-intel
+libva
+libva-utils
+
+# System / Desktop Core
+gtk3
+gtk4
+at-spi2-core
+gsettings-desktop-schemas
+
+stow
+greetd
+greetd-regreet
+
+gnome-themes-extra
+
+rofi

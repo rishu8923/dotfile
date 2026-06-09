@@ -1,0 +1,44 @@
+@define-color bg        #%%background%%;
+@define-color bg_soft   #%%color8.hex%%;
+@define-color fg        #%%foreground%%;
+@define-color accent    #%%color6.hex%%;
+
+* {
+  all: unset;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 12px;
+  color: @fg;
+  }
+
+window {
+background-color: @bg;
+border: 2px solid @accent;
+}
+
+#outer-box {
+padding: 6px;
+}
+
+#input {
+background-color: @bg_soft;
+padding: 6px 8px;
+margin-bottom: 6px;
+}
+
+#scroll {
+margin: 0px;
+}
+
+#entry {
+padding: 6px 8px;
+}
+
+#entry:selected {
+background-color: @bg_soft;
+color: @accent;
+}
+
+#text {
+margin-left: 2px;
+}
+

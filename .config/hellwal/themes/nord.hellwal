@@ -1,0 +1,17 @@
+%% color0  = #2E3440 %%  ;; nord0 - background
+%% color1  = #BF616A %%  ;; nord11 - red
+%% color2  = #A3BE8C %%  ;; nord14 - green
+%% color3  = #EBCB8B %%  ;; nord13 - yellow
+%% color4  = #81A1C1 %%  ;; nord9  - blue
+%% color5  = #B48EAD %%  ;; nord15 - purple
+%% color6  = #88C0D0 %%  ;; nord8  - cyan
+%% color7  = #E5E9F0 %%  ;; nord5  - light fg
+
+%% color8  = #4C566A %%  ;; nord3  - dark gray
+%% color9  = #BF616A %%  ;; bright red
+%% color10 = #A3BE8C %%  ;; bright green
+%% color11 = #EBCB8B %%  ;; bright yellow
+%% color12 = #81A1C1 %%  ;; bright blue
+%% color13 = #B48EAD %%  ;; bright purple
+%% color14 = #8FBCBB %%  ;; nord7  - teal
+%% color15 = #ECEFF4 %%  ;; nord6  - white

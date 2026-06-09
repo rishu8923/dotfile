@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Yazi
+Exec=kitty --class=yazi -e yazi
+Type=Application

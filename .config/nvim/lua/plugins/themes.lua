@@ -1,0 +1,15 @@
+return {
+  { "catppuccin/nvim",             name = "catppuccin",        priority = 1000 },
+  { "Mofiqul/dracula.nvim",        name = "dracula",           priority = 1000 },
+  { "sainnhe/everforest",          name = "everforest",        priority = 1000 },
+  { "projekt0n/github-nvim-theme", name = "github-nvim-theme", priority = 1000 },
+  { "ellisonleao/gruvbox.nvim",    name = "gruvbox",           priority = 1000 },
+  { "sainnhe/gruvbox-material",    name = "gruvbox-material",  priority = 1000 },
+  { "rebelot/kanagawa.nvim",       name = "kanagawa",          priority = 1000 },
+  { "shaunsingh/nord.nvim",        name = "nord",              priority = 1000 },
+  { "navarasu/onedark.nvim",       name = "onedark",           priority = 1000 },
+  { "olivercederborg/poimandres.nvim", name = "poimandres",    priority = 1000 },
+  { "folke/tokyonight.nvim",       name = "tokyonight",        priority = 1000 },
+  { "vague-theme/vague.nvim",      name = "vague",             priority = 1000 },
+  { "mcchrish/zenbones.nvim",      name = "zenbones",          priority = 1000 },
+}

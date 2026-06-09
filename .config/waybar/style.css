@@ -1,0 +1,114 @@
+@import url("colors.css");
+
+@define-color bg        @background;
+@define-color bg_soft   @color8;
+@define-color fg        @foreground;
+
+@define-color rosewater @color15;
+@define-color pink      @color5;
+@define-color mauve     @color12;
+@define-color red       @color1;
+@define-color peach     @color3;
+@define-color yellow    @color11;
+@define-color green     @color2;
+@define-color teal      @color14;
+@define-color blue      @color4;
+@define-color lavender  @color6;
+@define-color gray      @color8;
+
+* {
+  all: unset;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 12px;
+  color: @fg;
+}
+
+window#waybar {
+  background: @bg;
+}
+
+.modules-left  { margin-left: 8px; }
+.modules-right { margin-right: 8px; }
+
+#custom-arch {
+  color: @blue;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+#workspaces button {
+  padding: 0 7px;
+  margin: 0 2px;
+  color: @gray;
+}
+
+#workspaces button.focused {
+  color: @fg;
+  font-weight: 700;
+}
+
+#workspaces button.visible { color: @blue; }
+#workspaces button.urgent  { color: @red; }
+#workspaces button:hover   { color: @fg; }
+
+#clock {
+  font-weight: 700;
+}
+
+#network-traffic { color: @blue; }
+#memory          { color: @teal; }
+#cpu             { color: @mauve; }
+#temperature     { color: @rosewater; }
+
+#custom-wifi      { color: @blue; }
+#custom-bluetooth { color: @lavender; }
+
+#pulseaudio { color: @green; }
+#backlight  { color: @yellow; }
+#battery    { color: @peach; }
+
+#custom-updates   { color: @green; }
+#custom-clipboard { color: @blue; }
+
+#network-traffic,
+#memory,
+#cpu,
+#temperature,
+#custom-wifi,
+#custom-bluetooth,
+#pulseaudio,
+#backlight,
+#battery,
+#custom-updates,
+#custom-clipboard {
+  margin: 0 7px;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @yellow;
+}
+
+#battery.critical:not(.charging) {
+  color: @red;
+}
+
+#pulseaudio.muted {
+  color: @gray;
+}
+
+#tray {
+  margin-left: 8px;
+  margin-right: 12px;
+}
+
+tooltip {
+  background: @bg_soft;
+  color: @fg;
+  padding: 6px;
+  border-radius: 6px;
+}

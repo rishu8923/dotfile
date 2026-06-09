@@ -1,0 +1,62 @@
+# ~/.config/tmuxinator/IDE.yml
+
+name: IDE
+root: ~/projects/my_app   # Set this explicitly per project
+
+# Do not auto-attach if you sometimes script startup
+attach: true
+
+# Ensure correct Ruby and environment on every pane
+pre_window: |
+  export RAILS_ENV=development
+  if command -v rbenv >/dev/null 2>&1; then
+    rbenv local
+  fi
+
+# Project lifecycle hooks
+on_project_start: |
+  echo "Starting Rails IDE session..."
+
+on_project_stop: |
+  echo "Stopping Rails IDE session..."
+
+windows:
+  - editor:
+      layout: main-vertical
+      panes:
+        - nvim
+
+  - server:
+      layout: even-horizontal
+      panes:
+        - |
+          bin/rails server
+        - |
+          bin/rails console
+
+  - workers:
+      layout: even-horizontal
+      panes:
+        - |
+          bundle exec sidekiq
+        - |
+          guard
+
+  - logs:
+      layout: tiled
+      panes:
+        - tail -f log/development.log
+        - tail -f log/test.log
+
+  - database:
+      panes:
+        - |
+          if command -v pgcli >/dev/null 2>&1; then
+            pgcli
+          else
+            psql
+          fi
+
+  - system:
+      panes:
+        - htop

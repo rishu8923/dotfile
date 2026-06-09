@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Joplin
+Exec=alacritty --class=joplin -e joplin
+Type=Application
