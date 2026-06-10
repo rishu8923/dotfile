@@ -1,0 +1,321 @@
+Starting installation...
+Backing up existing makepkg.conf...
+Installing custom makepkg.conf...
+makepkg.conf successfully installed.
+Configuring firewall rules...
+sudo: ufw: command not found
+Installation failed at line 28
+Starting installation...
+Backing up existing makepkg.conf...
+Installing custom makepkg.conf...
+makepkg.conf successfully installed.
+Backing up existing config...
+Appling DNS configuration...
+DNS configuration applied.
+Current DNS status:
+           Protocols: +LLMNR +mDNS +DNSOverTLS DNSSEC=yes/supported
+         DNS Servers: 1.1.1.1 1.0.0.1
+Fallback DNS Servers: 9.9.9.9#dns.quad9.net 2620:fe::9#dns.quad9.net
+         Protocols: -DefaultRoute +LLMNR +mDNS +DNSOverTLS DNSSEC=yes/supported
+         Protocols: -DefaultRoute +LLMNR +mDNS +DNSOverTLS DNSSEC=yes/supported
+         Protocols: +DefaultRoute +LLMNR +mDNS +DNSOverTLS DNSSEC=yes/supported
+       DNS Servers: 10.28.131.182 2402:3a80:3bb:bbc3::fc
+Enabling AppArmor service...
+Adding kernel parameters for AppArmor...
+Enforcing Firejail AppArmor profile...
+Setting /etc/apparmor.d/firejail-default to enforce mode.
+AppArmor setup complete.
+Enabling Firejail sandboxing...
+firecfg version 0.9.80
+
+Removing all firejail symlinks from /usr/local/bin
+
+Looking for config files in /etc/firejail/firecfg.d/*.conf
+
+Configuring symlinks in /usr/local/bin
+Parsing /etc/firejail/firecfg.config
+   Telegram created
+   anki created
+   b2sum created
+   bitwarden-desktop created
+   chromium created
+   cksum created
+   code created
+   conplay created
+   enchant-2 created
+   enchant-lsmod-2 created
+   ffmpegthumbnailer created
+   ffplay created
+   ffprobe created
+   gapplication created
+   gnome-keyring created
+   gnome-keyring-3 created
+   gnome-keyring-daemon created
+   img2txt created
+   imv created
+   librewolf created
+   man created
+   mpg123 created
+   mpg123-id3dump created
+   mpg123-strip created
+   mpv created
+   out123 created
+   patch created
+   pavucontrol created
+   pdftotext created
+   ping created
+   qbittorrent created
+   qt-faststart created
+   qt5ct created
+   qt6ct created
+   secret-tool created
+   session-messenger-desktop created
+   signal-desktop created
+   ssh created
+   strings created
+   sum created
+   torbrowser-launcher created
+   tutanota-desktop created
+   udiskie created
+   vesktop created
+   wget created
+   zathura created
+
+Adding user voidpkr to Firejail access database in /etc/firejail/firejail.users
+User voidpkr already in the database
+
+Loading AppArmor profile
+
+Fixing desktop files in /home/voidpkr/.local/share/applications
+   code.desktop skipped: file exists
+   librewolf.desktop skipped: file exists
+   mimeinfo.cache skipped (not a .desktop file)
+   tutanota-desktop.desktop skipped: file exists
+   chromium.desktop skipped: file exists
+   obsidian.desktop skipped: file exists
+   org.gnome.Nautilus.desktop skipped: file exists
+Firejail setup complete.
+Enable libvirt socket activation...
+Add user to libvirt group...
+Ensure KVM modules load at boot...
+Creating default libvirt network if missing...
+Checking if network is active...
+KVM/QEMU setup complete.
+Log out or reboot once to refresh group permissions.
+Creating screenshot directory...
+Created screenshot directory successfully.
+Creating screenrecord directory...
+Created screenrecord directory successfully.
+==> Dotfiles dir: /home/voidpkr/Downloads/test-1/dotfiles_fixed
+==> Starting GNU Stow
+==> Fixing absolute symlinks
+==> Scanning for conflicts
+==> Running stow
+==> Done
+Creating symlinks...
+Symlinks created.
+Restoring previous theme: everforest-hard-dark
+WARNING: Wallpaper for 'everforest-hard-dark' not found at /home/voidpkr/.config/themes/everforest-hard-dark/wallpaper.png
+         Place your wallpaper image there and re-run this script.
+Initialising hellwal with theme: everforest-hard-dark
+WARNING: hellwal exited non-zero; colours may not be generated yet.
+Symlink setup complete.
+==> LibreWolf setup (dotfiles mode)
+==> Config dir: /home/voidpkr/.librewolf
+==> Using profile: /home/voidpkr/.librewolf/pulf7xeb.default-default
+==> Linking user.js
+==> LibreWolf configured successfully
+Installation Complete :)
+Starting installation...
+Backing up existing makepkg.conf...
+Installing custom makepkg.conf...
+makepkg.conf successfully installed.
+Backing up existing config...
+Appling DNS configuration...
+DNS configuration applied.
+Current DNS status:
+           Protocols: +LLMNR +mDNS +DNSOverTLS DNSSEC=yes/supported
+         DNS Servers: 1.1.1.1 1.0.0.1
+Fallback DNS Servers: 9.9.9.9#dns.quad9.net 2620:fe::9#dns.quad9.net
+         Protocols: -DefaultRoute +LLMNR +mDNS +DNSOverTLS DNSSEC=yes/supported
+         Protocols: +DefaultRoute +LLMNR +mDNS +DNSOverTLS DNSSEC=yes/supported
+       DNS Servers: 10.28.131.182 2402:3a80:3bb:bbc3::fc
+         Protocols: -DefaultRoute +LLMNR +mDNS +DNSOverTLS DNSSEC=yes/supported
+Enabling AppArmor service...
+Adding kernel parameters for AppArmor...
+Enforcing Firejail AppArmor profile...
+Setting /etc/apparmor.d/firejail-default to enforce mode.
+AppArmor setup complete.
+Enabling Firejail sandboxing...
+Warning: cannot open ~/.local/share/applications//home/voidpkr/.local/share/applications/librewolf.desktop
+Warning: cannot open ~/.local/share/applications//home/voidpkr/.local/share/applications/tutanota-desktop.desktop
+Warning: cannot open ~/.local/share/applications//home/voidpkr/.local/share/applications/obsidian.desktop
+Warning: cannot open ~/.local/share/applications//home/voidpkr/.local/share/applications/org.gnome.Nautilus.desktop
+firecfg version 0.9.80
+
+Removing all firejail symlinks from /usr/local/bin
+
+Looking for config files in /etc/firejail/firecfg.d/*.conf
+
+Configuring symlinks in /usr/local/bin
+Parsing /etc/firejail/firecfg.config
+   Telegram created
+   anki created
+   b2sum created
+   bitwarden-desktop created
+   chromium created
+   cksum created
+   code created
+   conplay created
+   enchant-2 created
+   enchant-lsmod-2 created
+   ffmpegthumbnailer created
+   ffplay created
+   ffprobe created
+   gapplication created
+   gnome-keyring created
+   gnome-keyring-3 created
+   gnome-keyring-daemon created
+   img2txt created
+   imv created
+   librewolf created
+   man created
+   mpg123 created
+   mpg123-id3dump created
+   mpg123-strip created
+   mpv created
+   out123 created
+   patch created
+   pavucontrol created
+   pdftotext created
+   ping created
+   qbittorrent created
+   qt-faststart created
+   qt5ct created
+   qt6ct created
+   secret-tool created
+   session-messenger-desktop created
+   signal-desktop created
+   ssh created
+   strings created
+   sum created
+   torbrowser-launcher created
+   tutanota-desktop created
+   udiskie created
+   vesktop created
+   wget created
+   zathura created
+
+Adding user voidpkr to Firejail access database in /etc/firejail/firejail.users
+User voidpkr already in the database
+
+Loading AppArmor profile
+
+Fixing desktop files in /home/voidpkr/.local/share/applications
+   code.desktop skipped: file exists
+   mimeinfo.cache skipped (not a .desktop file)
+   chromium.desktop skipped: file exists
+Firejail setup complete.
+Enable libvirt socket activation...
+Add user to libvirt group...
+Ensure KVM modules load at boot...
+Creating default libvirt network if missing...
+Checking if network is active...
+KVM/QEMU setup complete.
+Log out or reboot once to refresh group permissions.
+Creating screenshot directory...
+Created screenshot directory successfully.
+Creating screenrecord directory...
+Created screenrecord directory successfully.
+==> Dotfiles dir: /home/voidpkr/dotfiles
+==> Starting GNU Stow
+==> Fixing absolute symlinks
+Converting: /home/voidpkr/dotfiles/.config/waybar/colors.css -> /home/voidpkr/.cache/hellwal/waybar-colors.css
+Converting: /home/voidpkr/dotfiles/.config/zathura/zathura-colors -> /home/voidpkr/.cache/hellwal/zathura-colors
+Converting: /home/voidpkr/dotfiles/.config/wofi/style.css -> /home/voidpkr/.cache/hellwal/wofi.css
+==> Scanning for conflicts
+Backing up: /home/voidpkr/.bashrc -> /home/voidpkr/.bashrc.bak.1781062686
+Backing up: /home/voidpkr/.config/alacritty -> /home/voidpkr/.config/alacritty.bak.1781062686
+Backing up: /home/voidpkr/.config/btop -> /home/voidpkr/.config/btop.bak.1781062686
+Backing up: /home/voidpkr/.config/foot -> /home/voidpkr/.config/foot.bak.1781062686
+Backing up: /home/voidpkr/.config/hellwal -> /home/voidpkr/.config/hellwal.bak.1781062686
+Backing up: /home/voidpkr/.config/kitty -> /home/voidpkr/.config/kitty.bak.1781062686
+Backing up: /home/voidpkr/.config/mpv -> /home/voidpkr/.config/mpv.bak.1781062686
+Backing up: /home/voidpkr/.config/nvim -> /home/voidpkr/.config/nvim.bak.1781062686
+Backing up: /home/voidpkr/.config/scripts -> /home/voidpkr/.config/scripts.bak.1781062686
+Backing up: /home/voidpkr/.config/sway -> /home/voidpkr/.config/sway.bak.1781062686
+Backing up: /home/voidpkr/.config/themes -> /home/voidpkr/.config/themes.bak.1781062686
+Backing up: /home/voidpkr/.config/tmuxinator -> /home/voidpkr/.config/tmuxinator.bak.1781062686
+Backing up: /home/voidpkr/.config/vesktop/themes/midnight.theme.css -> /home/voidpkr/.config/vesktop/themes/midnight.theme.css.bak.1781062686
+Backing up: /home/voidpkr/.config/vesktop/themes/midnight_everforest.theme.css -> /home/voidpkr/.config/vesktop/themes/midnight_everforest.theme.css.bak.1781062686
+Backing up: /home/voidpkr/.config/vesktop/themes/midnight_sharp.theme.css -> /home/voidpkr/.config/vesktop/themes/midnight_sharp.theme.css.bak.1781062686
+Backing up: /home/voidpkr/.config/waybar -> /home/voidpkr/.config/waybar.bak.1781062686
+Backing up: /home/voidpkr/.config/wofi -> /home/voidpkr/.config/wofi.bak.1781062686
+Backing up: /home/voidpkr/.config/yazi/flavors/everforest-hard.yazi/flavor.toml -> /home/voidpkr/.config/yazi/flavors/everforest-hard.yazi/flavor.toml.bak.1781062686
+Backing up: /home/voidpkr/.config/yazi/flavors/everforest-hard.yazi/tmtheme.xml -> /home/voidpkr/.config/yazi/flavors/everforest-hard.yazi/tmtheme.xml.bak.1781062686
+Backing up: /home/voidpkr/.config/yazi/flavors/kanagawa.yazi/flavor.toml -> /home/voidpkr/.config/yazi/flavors/kanagawa.yazi/flavor.toml.bak.1781062686
+Backing up: /home/voidpkr/.config/yazi/flavors/kanagawa.yazi/tmtheme.xml -> /home/voidpkr/.config/yazi/flavors/kanagawa.yazi/tmtheme.xml.bak.1781062686
+Backing up: /home/voidpkr/.config/yazi/init.lua -> /home/voidpkr/.config/yazi/init.lua.bak.1781062686
+Backing up: /home/voidpkr/.config/yazi/package.toml -> /home/voidpkr/.config/yazi/package.toml.bak.1781062686
+Backing up: /home/voidpkr/.config/yazi/plugins/full-border.yazi/main.lua -> /home/voidpkr/.config/yazi/plugins/full-border.yazi/main.lua.bak.1781062686
+Backing up: /home/voidpkr/.config/yazi/theme.toml -> /home/voidpkr/.config/yazi/theme.toml.bak.1781062686
+Backing up: /home/voidpkr/.config/zathura -> /home/voidpkr/.config/zathura.bak.1781062686
+Backing up: /home/voidpkr/.local/share/applications/Sky Children of the Light.desktop -> /home/voidpkr/.local/share/applications/Sky Children of the Light.desktop.bak.1781062686
+Backing up: /home/voidpkr/.local/share/applications/firefox.desktop -> /home/voidpkr/.local/share/applications/firefox.desktop.bak.1781062686
+Backing up: /home/voidpkr/.local/share/applications/joplin.desktop -> /home/voidpkr/.local/share/applications/joplin.desktop.bak.1781062686
+Backing up: /home/voidpkr/.local/share/applications/librewolf.desktop -> /home/voidpkr/.local/share/applications/librewolf.desktop.bak.1781062686
+Backing up: /home/voidpkr/.local/share/applications/obsidian.desktop -> /home/voidpkr/.local/share/applications/obsidian.desktop.bak.1781062686
+Backing up: /home/voidpkr/.local/share/applications/org.gnome.Nautilus.desktop -> /home/voidpkr/.local/share/applications/org.gnome.Nautilus.desktop.bak.1781062686
+Backing up: /home/voidpkr/.local/share/applications/tutanota-desktop.desktop -> /home/voidpkr/.local/share/applications/tutanota-desktop.desktop.bak.1781062686
+Backing up: /home/voidpkr/.local/share/applications/yazi.desktop -> /home/voidpkr/.local/share/applications/yazi.desktop.bak.1781062686
+Backing up: /home/voidpkr/setup.log -> /home/voidpkr/setup.log.bak.1781062686
+==> Running stow
+LINK: .bashrc => dotfiles/.bashrc
+LINK: .config/alacritty => ../dotfiles/.config/alacritty
+LINK: .config/btop => ../dotfiles/.config/btop
+LINK: .config/foot => ../dotfiles/.config/foot
+LINK: .config/hellwal => ../dotfiles/.config/hellwal
+LINK: .config/kitty => ../dotfiles/.config/kitty
+LINK: .config/mpv => ../dotfiles/.config/mpv
+LINK: .config/nvim => ../dotfiles/.config/nvim
+LINK: .config/scripts => ../dotfiles/.config/scripts
+LINK: .config/sway => ../dotfiles/.config/sway
+LINK: .config/themes => ../dotfiles/.config/themes
+LINK: .config/tmuxinator => ../dotfiles/.config/tmuxinator
+LINK: .config/vesktop/themes/midnight.theme.css => ../../../dotfiles/.config/vesktop/themes/midnight.theme.css
+LINK: .config/vesktop/themes/midnight_everforest.theme.css => ../../../dotfiles/.config/vesktop/themes/midnight_everforest.theme.css
+LINK: .config/vesktop/themes/midnight_sharp.theme.css => ../../../dotfiles/.config/vesktop/themes/midnight_sharp.theme.css
+LINK: .config/waybar => ../dotfiles/.config/waybar
+LINK: .config/wofi => ../dotfiles/.config/wofi
+LINK: .config/yazi/flavors/everforest-hard.yazi/flavor.toml => ../../../../dotfiles/.config/yazi/flavors/everforest-hard.yazi/flavor.toml
+LINK: .config/yazi/flavors/everforest-hard.yazi/tmtheme.xml => ../../../../dotfiles/.config/yazi/flavors/everforest-hard.yazi/tmtheme.xml
+LINK: .config/yazi/flavors/kanagawa.yazi/flavor.toml => ../../../../dotfiles/.config/yazi/flavors/kanagawa.yazi/flavor.toml
+LINK: .config/yazi/flavors/kanagawa.yazi/tmtheme.xml => ../../../../dotfiles/.config/yazi/flavors/kanagawa.yazi/tmtheme.xml
+LINK: .config/yazi/init.lua => ../../dotfiles/.config/yazi/init.lua
+LINK: .config/yazi/package.toml => ../../dotfiles/.config/yazi/package.toml
+LINK: .config/yazi/plugins/full-border.yazi/main.lua => ../../../../dotfiles/.config/yazi/plugins/full-border.yazi/main.lua
+LINK: .config/yazi/theme.toml => ../../dotfiles/.config/yazi/theme.toml
+LINK: .config/zathura => ../dotfiles/.config/zathura
+LINK: .local/share/applications/Sky Children of the Light.desktop => ../../../dotfiles/.local/share/applications/Sky Children of the Light.desktop
+LINK: .local/share/applications/firefox.desktop => ../../../dotfiles/.local/share/applications/firefox.desktop
+LINK: .local/share/applications/joplin.desktop => ../../../dotfiles/.local/share/applications/joplin.desktop
+LINK: .local/share/applications/librewolf.desktop => ../../../dotfiles/.local/share/applications/librewolf.desktop
+LINK: .local/share/applications/obsidian.desktop => ../../../dotfiles/.local/share/applications/obsidian.desktop
+LINK: .local/share/applications/org.gnome.Nautilus.desktop => ../../../dotfiles/.local/share/applications/org.gnome.Nautilus.desktop
+LINK: .local/share/applications/tutanota-desktop.desktop => ../../../dotfiles/.local/share/applications/tutanota-desktop.desktop
+LINK: .local/share/applications/yazi.desktop => ../../../dotfiles/.local/share/applications/yazi.desktop
+LINK: setup.log => dotfiles/setup.log
+==> Done
+Creating symlinks...
+Symlinks created.
+Restoring previous theme: everforest-hard-dark
+Wallpaper set to: everforest-hard-dark
+Initialising hellwal with theme: everforest-hard-dark
+WARNING: hellwal exited non-zero; colours may not be generated yet.
+Symlink setup complete.
+==> LibreWolf setup (dotfiles mode)
+==> Config dir: /home/voidpkr/.librewolf
+==> Using profile: /home/voidpkr/.librewolf/pulf7xeb.default-default
+==> Linking user.js
+==> LibreWolf configured successfully
+Installation Complete :)

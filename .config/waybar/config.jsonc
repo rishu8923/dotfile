@@ -19,6 +19,7 @@
     "memory",
     "cpu",
     "temperature",
+    "custom/vpn",
     "custom/wifi",
     "custom/bluetooth",
     "pulseaudio",
@@ -66,6 +67,16 @@
     "interface": "wlan0",
     "interval": 1,
     "format": " {bandwidthDownBits}  {bandwidthUpBits}"
+  },
+
+
+  "custom/vpn": {
+    "exec": "~/.config/scripts/vpn-status.sh",
+    "return-type": "json",
+    "interval": 5,
+    "format": "{}",
+    "tooltip": true,
+    "on-click": "~/.config/scripts/vpn-switcher.sh"
   },
 
   "custom/wifi": {

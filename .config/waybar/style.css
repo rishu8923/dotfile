@@ -112,3 +112,16 @@ tooltip {
   padding: 6px;
   border-radius: 6px;
 }
+
+/* ── VPN indicator ─────────────────────────────────────────────────────────── */
+#custom-vpn {
+  margin: 0 7px;
+}
+
+#custom-vpn.connected {
+  color: @green;
+}
+
+#custom-vpn.disconnected {
+  color: @gray;
+}

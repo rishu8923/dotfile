@@ -1,4 +1,4 @@
-# /home/voidpkr/.config/tmuxinator/terminal.yml
+# ~/.config/tmuxinator/terminal.yml
 
 name: terminal
 root: ~/

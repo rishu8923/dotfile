@@ -1,4 +1,4 @@
-# /home/voidpkr/.config/tmuxinator/config.yml
+# ~/.config/tmuxinator/config.yml
 
 name: config
 root: ~/

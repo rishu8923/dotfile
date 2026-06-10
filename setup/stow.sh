@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 set -uo pipefail
 
-DOTFILES_DIR="${HOME}/dotfiles"
+# Resolve the dotfiles root (one level up from this script's directory)
+DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 TARGET_DIR="${HOME}"
 
+echo "==> Dotfiles dir: $DOTFILES_DIR"
 echo "==> Starting GNU Stow"
 
 backup_if_exists() {
@@ -48,12 +50,18 @@ fix_absolute_symlinks() {
 handle_conflicts() {
   echo "==> Scanning for conflicts"
 
+  # Store patterns in variables — inline backslash-space inside [[ =~ ]] causes
+  # a bash syntax error on some versions; variable form is always safe.
+  local pat_not_owned='existing target is not owned by stow: (.*)$'
+  local pat_cannot_stow='cannot stow.*over existing target (.*) since'
+
+  cd "$DOTFILES_DIR"
   stow -nvt "$TARGET_DIR" . 2>&1 | while read -r line; do
 
-    if [[ "$line" =~ existing\ target\ is\ not\ owned\ by\ stow:\ (.*)$ ]]; then
+    if [[ "$line" =~ $pat_not_owned ]]; then
       backup_if_exists "${TARGET_DIR}/${BASH_REMATCH[1]}"
 
-    elif [[ "$line" =~ cannot\ stow.*over\ existing\ target\ (.*)\ since ]]; then
+    elif [[ "$line" =~ $pat_cannot_stow ]]; then
       backup_if_exists "${TARGET_DIR}/${BASH_REMATCH[1]}"
 
     fi
@@ -68,6 +76,7 @@ fix_absolute_symlinks
 handle_conflicts
 
 echo "==> Running stow"
+cd "$DOTFILES_DIR"
 stow -vt "$TARGET_DIR" .
 
 echo "==> Done"

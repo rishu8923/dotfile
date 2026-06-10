@@ -16,16 +16,16 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 chmod +x "$SCRIPT_DIR"/setup/*.sh
 
-bash "$SCRIPT_DIR/setup/update.sh"
+# bash "$SCRIPT_DIR/setup/update.sh"
 
 # bash "$SCRIPT_DIR/setup/uninstall.sh"
 bash "$SCRIPT_DIR/setup/makepkg.sh"
-bash "$SCRIPT_DIR/setup/pacman.sh"
+# bash "$SCRIPT_DIR/setup/pacman.sh"
 
-bash "$SCRIPT_DIR/setup/yay.sh"
-bash "$SCRIPT_DIR/setup/aur.sh"
+# bash "$SCRIPT_DIR/setup/yay.sh"
+# bash "$SCRIPT_DIR/setup/aur.sh"
 
-bash "$SCRIPT_DIR/setup/ufw.sh"
+# bash "$SCRIPT_DIR/setup/ufw.sh"
 bash "$SCRIPT_DIR/setup/dns.sh"
 bash "$SCRIPT_DIR/setup/apparmor.sh"
 bash "$SCRIPT_DIR/setup/firejail.sh"

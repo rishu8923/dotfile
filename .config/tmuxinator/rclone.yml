@@ -1,4 +1,4 @@
-# /home/voidpkr/.config/tmuxinator/rclone.yml
+# ~/.config/tmuxinator/rclone.yml
 
 name: rclone
 root: ~/
